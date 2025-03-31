@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla Futurista</title>
+    <link rel="stylesheet" href="css/style.css"> <!-- Enlace al archivo CSS externo -->
+</head>
+<body>
+
+    <!-- Contenedor principal -->
+    <div class="container">
+        
+        <!-- Menú lateral con icono de hamburguesa -->
+        <div class="menu-icon" onclick="toggleMenu()">☰</div> <!-- Icono de menú para dispositivos móviles -->
+        <nav class="sidebar">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="tabla.html">Tabla</a></li>
+            </ul>
+        </nav>
+
+        <!-- Contenido de la tabla -->
+        <div class="content">
+            <h1>Tabla de Temas Tecnológicos</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Tema</th>
+                        <th>Descripción</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>01</td>
+                        <td>Inteligencia Artificial</td>
+                        <td>Desarrollo de modelos predictivos y automatización.</td>
+                    </tr>
+                    <tr>
+                        <td>02</td>
+                        <td>Blockchain</td>
+                        <td>Tecnología descentralizada para seguridad y criptomonedas.</td>
+                    </tr>
+                    <tr>
+                        <td>03</td>
+                        <td>Computación Cuántica</td>
+                        <td>Procesamiento de datos a niveles subatómicos.</td>
+                    </tr>
+                    <tr>
+                        <td>04</td>
+                        <td>Ciberseguridad</td>
+                        <td>Protección de información digital contra ataques.</td>
+                    </tr>
+                    <tr>
+                        <td>05</td>
+                        <td>Metaverso</td>
+                        <td>Entornos virtuales inmersivos para interacción digital.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- JavaScript dentro del mismo archivo -->
+    <script>
+        function toggleMenu() {
+            var sidebar = document.querySelector(".sidebar");
+            sidebar.classList.toggle("active"); // Alternar la visibilidad del menú lateral
+        }
+    </script>
+
+</body>
+</html>
